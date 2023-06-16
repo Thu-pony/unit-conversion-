@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:text="请选择输入的单位"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:textColor="@color/purple_700"
+    android:layout_width="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<Spinner
+    android:id="@+id/inputSpinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:spinnerMode="dropdown"
+/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入具体的数值"
+        android:id="@+id/input_data"
+        android:inputType="numberDecimal"
+     />
+        <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="转换"
+                android:id="@+id/btn_convert"
+            />
+    </LinearLayout>
+    <TextView
+        android:text="请选择输出的单位"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/purple_700"
+        android:layout_width="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Spinner
+            android:id="@+id/outputSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            />
+        <TextView
+            android:text="转换结果为:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/output_data" />
+    </LinearLayout>
+
+</LinearLayout>

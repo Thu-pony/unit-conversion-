@@ -1,0 +1,12 @@
+<resources>
+    <string name="prompt_input">请选择输入单位</string>
+    <string name="prompt_output">请选择输出单位</string>
+    <string name="app_name">measurementconverter</string>
+    <string-array name="长度">
+        <item>米(metre)</item>
+        <item>公里(kilometre)</item>
+        <item>海里(nautical mile)</item>
+        <item>英里(mile)</item>
+        <item>英尺(foot)</item>
+    </string-array>
+</resources>
